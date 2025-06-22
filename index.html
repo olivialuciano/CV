@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <!-- Botón de cambio de tema -->
+      <!-- Botón de cambio de tema y selector de idioma -->
       <div class="theme-toggle">
         <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
           <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -34,6 +34,11 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
+        <select id="language-selector" class="language-selector" aria-label="Seleccionar idioma">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+        </select>
       </div>
 
       <header class="hero">
@@ -43,8 +48,8 @@
           class="profile-pic animated-pic"
         />
         <div class="hero-text">
-          <h1 class="animated-heading">Olivia Luciano</h1>
-          <p class="animated-sub">
+          <h1 class="animated-heading" data-es="Olivia Luciano" data-en="Olivia Luciano" data-de="Olivia Luciano">Olivia Luciano</h1>
+          <p class="animated-sub" data-es="✦ Técnica en Programación<br />✦ Salesforce Admin<br />✦ Profesora Universitaria" data-en="✦ Programming Technician<br />✦ Salesforce Admin<br />✦ University Professor" data-de="✦ Technikerin für Programmierung<br />✦ Salesforce Admin<br />✦ Universitätsprofessorin">
             ✦ Técnica en Programación<br />
             ✦ Salesforce Admin<br />
             ✦ Profesora Universitaria
@@ -52,18 +57,16 @@
 
           <br />
           <div class="hero-buttons">
-            <a href="#contacto" class="btn">Contactame</a>
-            <a href="assets/CV.pdf" download class="btn-outline"
-              >Descargar CV</a
-            >
+            <a href="#contacto" class="btn" data-es="Contactame" data-en="Contact Me" data-de="Kontaktiere mich">Contactame</a>
+            <a href="assets/CV.pdf" download class="btn-outline" data-es="Descargar CV" data-en="Download CV" data-de="CV herunterladen">Descargar CV</a>
           </div>
         </div>
       </header>
 
       <main>
         <section class="section" id="perfil">
-          <h2>✿ Conoceme</h2>
-          <p>
+          <h2 data-es="✿ Conoceme" data-en="✿ About Me" data-de="✿ Über mich">✿ Conoceme</h2>
+          <p data-es="¡Hola! Soy Oli, una chica de 22 años apasionada por la tecnología. Inicié mis estudios en la Facultad de Psicología, pero encontré mi vocación en la programación y me formé como Técnica Universitaria en Programación. Soy una persona responsable, organizada y proactiva, con experiencia docente que me ha brindado habilidades en empatía y comunicación efectiva. Me apasiona automatizar procesos y optimizar la eficiencia. Actualmente me encuentro trabajando en Avalian Salud como Administradora de Salesforce." data-en="Hello! I'm Oli, a 22-year-old girl passionate about technology. I started my studies at the Faculty of Psychology, but I found my vocation in programming and trained as a University Programming Technician. I am a responsible, organized, and proactive person, with teaching experience that has given me skills in empathy and effective communication. I am passionate about automating processes and optimizing efficiency. I am currently working at Avalian Salud as a Salesforce Administrator." data-de="Hallo! Ich bin Oli, ein 22-jähriges Mädchen, das leidenschaftlich an Technologie interessiert ist. Ich begann mein Studium an der Fakultät für Psychologie, fand aber meine Berufung in der Programmierung und wurde als Universitäts-Technikerin für Programmierung ausgebildet. Ich bin eine verantwortungsvolle, organisierte und proaktive Person mit Lehrerfahrung, die mir Fähigkeiten in Empathie und effektiver Kommunikation vermittelt hat. Ich bin leidenschaftlich daran interessiert, Prozesse zu automatisieren und die Effizienz zu optimieren. Derzeit arbeite ich bei Avalian Salud als Salesforce-Administratorin.">
             ¡Hola! Soy Oli, una chica de 22 años apasionada por la tecnología.
             Inicié mis estudios en la Facultad de Psicología, pero encontré mi
             vocación en la programación y me formé como Técnica Universitaria en
@@ -76,11 +79,11 @@
         </section>
 
         <section class="section" id="experiencia">
-          <h2>✿ Experiencia Profesional</h2>
+          <h2 data-es="✿ Experiencia Profesional" data-en="✿ Professional Experience" data-de="✿ Berufserfahrung">✿ Experiencia Profesional</h2>
           <div class="item">
-            <h3>Administradora de Salesforce – Avalian Salud</h3>
-            <span class="periodo">Ago 2023 – Actualidad</span>
-            <p>
+            <h3 data-es="Administradora de Salesforce – Avalian Salud" data-en="Salesforce Administrator – Avalian Salud" data-de="Salesforce-Administratorin – Avalian Salud">Administradora de Salesforce – Avalian Salud</h3>
+            <span class="periodo" data-es="Ago 2023 – Actualidad" data-en="Aug 2023 – Present" data-de="Aug 2023 – Gegenwart">Ago 2023 – Actualidad</span>
+            <p data-es="Realizo el relevamiento y análisis de requerimientos, desarrollo soluciones y ejecuto pruebas manuales. Utilizo Dataloader para la administración masiva de datos. Evalúo el impacto de las actualizaciones de versiones (release updates) de Salesforce en la organización. Desarrollé un toolkit en Bash con 10 funcionalidades que incluyen desde la generación de paquetes de despliegue (despliegue modular) hasta la gestión de ramas, utilizando SF, Salesforce CLI, Git y Bash. Mi mayor fortaleza es la automatización de todos los procesos manuales, siempre buscando optimizar cada paso del flujo de trabajo" data-en="I conduct requirements gathering and analysis, develop solutions, and execute manual testing. I use Dataloader for bulk data administration. I evaluate the impact of Salesforce release updates on the organization. I developed a Bash toolkit with 10 functionalities including deployment package generation (modular deployment) to branch management, using SF, Salesforce CLI, Git, and Bash. My greatest strength is automating all manual processes, always seeking to optimize each step of the workflow" data-de="Ich führe Anforderungsanalyse durch, entwickle Lösungen und führe manuelle Tests durch. Ich verwende Dataloader für die Massendatenverwaltung. Ich bewerte die Auswirkungen von Salesforce-Release-Updates auf die Organisation. Ich entwickelte ein Bash-Toolkit mit 10 Funktionalitäten, die von der Generierung von Bereitstellungspaketen (modulare Bereitstellung) bis zur Branch-Verwaltung reichen, unter Verwendung von SF, Salesforce CLI, Git und Bash. Meine größte Stärke ist die Automatisierung aller manuellen Prozesse, wobei ich immer versuche, jeden Schritt des Arbeitsablaufs zu optimieren">
               Realizo el relevamiento y análisis de requerimientos, desarrollo
               soluciones y ejecuto pruebas manuales. Utilizo Dataloader para la
               administración masiva de datos. Evalúo el impacto de las
@@ -94,18 +97,18 @@
             </p>
           </div>
           <div class="item">
-            <h3>Docente Universitaria – Universidad Austral</h3>
-            <span class="periodo">May 2024 – Actualidad</span>
-            <p>
+            <h3 data-es="Docente Universitaria – Universidad Austral" data-en="University Professor – Universidad Austral" data-de="Universitätsprofessorin – Universidad Austral">Docente Universitaria – Universidad Austral</h3>
+            <span class="periodo" data-es="May 2024 – Actualidad" data-en="May 2024 – Present" data-de="Mai 2024 – Gegenwart">May 2024 – Actualidad</span>
+            <p data-es="Imparto clases de la materia 'Gestión de Proyectos' de la Tecnicatura Universitaria en Programación y soy facilitadora de Salesforce." data-en="I teach the 'Project Management' course for the University Programming Technician degree and I am a Salesforce facilitator." data-de="Ich unterrichte den Kurs 'Projektmanagement' für den Universitätsabschluss als Programmiertechnikerin und bin Salesforce-Facilitatorin.">
               Imparto clases de la materia "Gestión de Proyectos" de la
               Tecnicatura Universitaria en Programación y soy facilitadora de
               Salesforce.
             </p>
           </div>
           <div class="item">
-            <h3>Docente Universitaria – UTN</h3>
-            <span class="periodo">Ago 2024 – Dic 2024</span>
-            <p>
+            <h3 data-es="Docente Universitaria – UTN" data-en="University Professor – UTN" data-de="Universitätsprofessorin – UTN">Docente Universitaria – UTN</h3>
+            <span class="periodo" data-es="Ago 2024 – Dic 2024" data-en="Aug 2024 – Dec 2024" data-de="Aug 2024 – Dez 2024">Ago 2024 – Dic 2024</span>
+            <p data-es="Impartí clases de la materia 'Metodologías de sistemas', abarcando metodologías ágiles, Scrum, experiencia de usuario y gestión de requerimientos. Además, supervisé la práctica profesional supervisada (PPS), guiando a los estudiantes en la elaboración de su proyecto final de carrera." data-en="I taught the 'System Methodologies' course, covering agile methodologies, Scrum, user experience, and requirements management. Additionally, I supervised the supervised professional practice (PPS), guiding students in the development of their final career project." data-de="Ich unterrichtete den Kurs 'Systemmethodologien', der agile Methodologien, Scrum, Benutzererfahrung und Anforderungsmanagement abdeckt. Außerdem betreute ich die überwachte Berufspraxis (PPS) und führte die Studierenden bei der Entwicklung ihres Abschlussprojekts.">
               Impartí clases de la materia "Metodologías de sistemas", abarcando
               metodologías ágiles, Scrum, experiencia de usuario y gestión de
               requerimientos. Además, supervisé la práctica profesional
@@ -116,23 +119,23 @@
         </section>
 
         <section class="section" id="educacion">
-          <h2>✿ Educación</h2>
+          <h2 data-es="✿ Educación" data-en="✿ Education" data-de="✿ Ausbildung">✿ Educación</h2>
           <div class="item">
-            <h3>
+            <h3 data-es="Tecnicatura Universitaria en Programación – Universidad Austral" data-en="University Programming Technician – Universidad Austral" data-de="Universitäts-Technikerin für Programmierung – Universidad Austral">
               Tecnicatura Universitaria en Programación – Universidad Austral
             </h3>
-            <span class="periodo">Mar 2022 – Feb 2024</span>
-            <p>Promedio: 9.21</p>
+            <span class="periodo" data-es="Mar 2022 – Feb 2024" data-en="Mar 2022 – Feb 2024" data-de="Mär 2022 – Feb 2024">Mar 2022 – Feb 2024</span>
+            <p data-es="Promedio: 9.21" data-en="GPA: 9.21" data-de="Durchschnitt: 9.21">Promedio: 9.21</p>
           </div>
           <div class="item">
-            <h3>Colegio San Bartolomé</h3>
-            <span class="periodo">2016 – 2020</span>
-            <p>Bilingüe – Doble escolaridad</p>
+            <h3 data-es="Colegio San Bartolomé" data-en="San Bartolomé School" data-de="San Bartolomé Schule">Colegio San Bartolomé</h3>
+            <span class="periodo" data-es="2016 – 2020" data-en="2016 – 2020" data-de="2016 – 2020">2016 – 2020</span>
+            <p data-es="Bilingüe – Doble escolaridad" data-en="Bilingual – Double schooling" data-de="Zweisprachig – Doppelter Schulbesuch">Bilingüe – Doble escolaridad</p>
           </div>
         </section>
 
         <section class="section" id="habilidades">
-          <h2>✿ Habilidades Técnicas</h2>
+          <h2 data-es="✿ Habilidades Técnicas" data-en="✿ Technical Skills" data-de="✿ Technische Fähigkeiten">✿ Habilidades Técnicas</h2>
           <ul class="tags">
             <li>Salesforce</li>
             <li>Dataloader</li>
@@ -162,35 +165,37 @@
         </section>
 
         <section class="section" id="proyectos">
-          <h2>✿ Proyectos</h2>
+          <h2 data-es="✿ Proyectos" data-en="✿ Projects" data-de="✿ Projekte">✿ Proyectos</h2>
           <div class="projects-grid">
             <div class="project-card">
               <div class="project-content">
-                <h3 class="project-title">Web Scrapping de Supermercados de Rosario</h3>
-                <p class="project-description">
-                  Una app de consola que pide al usuario el nombre del producto a buscar y devuelve un archivo con los productos con el precio en distintos supermercados con el objetivo de que el usuario pueda comparar y buscar el precio más barato.                </p>
-                <p class="project-description">
-                  Tecnologías Utilizadas: Python, Selenium.                </p>
+                <h3 class="project-title" data-es="Web Scrapping de Supermercados de Rosario" data-en="Web Scraping of Rosario Supermarkets" data-de="Web Scraping von Rosario Supermärkten">Web Scrapping de Supermercados de Rosario</h3>
+                <p class="project-description" data-es="Una app de consola que pide al usuario el nombre del producto a buscar y devuelve un archivo con los productos con el precio en distintos supermercados con el objetivo de que el usuario pueda comparar y buscar el precio más barato." data-en="A console app that asks the user for the product name to search and returns a file with products and prices from different supermarkets so the user can compare and find the cheapest price." data-de="Eine Konsolen-App, die den Benutzer nach dem zu suchenden Produktnamen fragt und eine Datei mit Produkten und Preisen aus verschiedenen Supermärkten zurückgibt, damit der Benutzer vergleichen und den günstigsten Preis finden kann.">
+                  Una app de consola que pide al usuario el nombre del producto a buscar y devuelve un archivo con los productos con el precio en distintos supermercados con el objetivo de que el usuario pueda comparar y buscar el precio más barato.
+                </p>
+                <p class="project-description" data-es="Tecnologías Utilizadas: Python, Selenium." data-en="Technologies Used: Python, Selenium." data-de="Verwendete Technologien: Python, Selenium.">
+                  Tecnologías Utilizadas: Python, Selenium.
+                </p>
 
                 <div class="project-links">
-                  <a href="https://github.com/olivialuciano/automatizacion_web_py" target="_blank" class="code">Repo</a>
+                  <a href="https://github.com/olivialuciano/automatizacion_web_py" target="_blank" class="code" data-es="Repo" data-en="Repo" data-de="Repo">Repo</a>
                 </div>
               </div>
               <div class="project-card">
                 <img src="assets/guia-vegana.png" alt="Salesforce Toolkit" class="project-image">
                 <div class="project-content">
-                  <h3 class="project-title">La Guía Vegana de Rosario</h3>
-                  <p class="project-description">
+                  <h3 class="project-title" data-es="La Guía Vegana de Rosario" data-en="The Vegan Guide of Rosario" data-de="Der Vegane Führer von Rosario">La Guía Vegana de Rosario</h3>
+                  <p class="project-description" data-es="Una guía para personas veganas y no veganas que quieren conocer más sobre el veganismo en Rosario. Aqui se encuentran bares, restaurantes, heladerías, panaderías, mercados, dietéticas, profesionales de la salud, recursos informativos y activismos que hay en la ciudad." data-en="A guide for vegan and non-vegan people who want to learn more about veganism in Rosario. Here you can find bars, restaurants, ice cream shops, bakeries, markets, health food stores, health professionals, informational resources, and activism in the city." data-de="Ein Führer für vegane und nicht-vegane Menschen, die mehr über Veganismus in Rosario erfahren möchten. Hier finden Sie Bars, Restaurants, Eisdielen, Bäckereien, Märkte, Bioläden, Gesundheitsfachkräfte, Informationsressourcen und Aktivismus in der Stadt.">
                     Una guía para personas veganas y no veganas que quieren conocer más sobre el veganismo en Rosario. Aqui se encuentran bares, restaurantes, heladerías, panaderías, mercados, dietéticas, profesionales de la salud, recursos informativos y activismos que hay en la ciudad.
                   </p>
-                  <p class="project-description">
+                  <p class="project-description" data-es="Tecnologías utilizadas: React JS, .NET Core, SQL Server. Para hosting se utilizó Render y Somee." data-en="Technologies used: React JS, .NET Core, SQL Server. For hosting, Render and Somee were used." data-de="Verwendete Technologien: React JS, .NET Core, SQL Server. Für das Hosting wurden Render und Somee verwendet.">
                     Tecnologías utilizadas: React JS, .NET Core, SQL Server. Para hosting se utilizó Render y Somee.
                   </p>
   
                   <div class="project-links">
-                    <a href="https://guia-vegana-rosario.onrender.com/" target="_blank" class="demo">Ver</a>
-                    <a href="https://github.com/olivialuciano/Guia-Vegana-Frontend" target="_blank" class="code">Repo</a>
-                    <a href="https://github.com/olivialuciano/Guia-Vegana-API" target="_blank" class="code">Repo API</a>
+                    <a href="https://guia-vegana-rosario.onrender.com/" target="_blank" class="demo" data-es="Ver" data-en="View" data-de="Ansehen">Ver</a>
+                    <a href="https://github.com/olivialuciano/Guia-Vegana-Frontend" target="_blank" class="code" data-es="Repo" data-en="Repo" data-de="Repo">Repo</a>
+                    <a href="https://github.com/olivialuciano/Guia-Vegana-API" target="_blank" class="code" data-es="Repo API" data-en="API Repo" data-de="API Repo">Repo API</a>
                   </div>
                 </div>
             </div>
@@ -200,33 +205,33 @@
         </section>
 
         <section class="section" id="certificaciones">
-          <h2>✿ Certificaciones</h2>
+          <h2 data-es="✿ Certificaciones" data-en="✿ Certifications" data-de="✿ Zertifizierungen">✿ Certificaciones</h2>
           <div class="cert-grid">
             <div class="cert-card">
               <img src="assets/pab.png" alt="App Builder" />
-              <h3>Salesforce Platform App Builder</h3>
-              <p class="cert-date">Junio 2025</p>
+              <h3 data-es="Salesforce Platform App Builder" data-en="Salesforce Platform App Builder" data-de="Salesforce Platform App Builder">Salesforce Platform App Builder</h3>
+              <p class="cert-date" data-es="Junio 2025" data-en="June 2025" data-de="Juni 2025">Junio 2025</p>
             </div>
             <div class="cert-card">
               <img src="assets/ai_ass.png" alt="AI Associate" />
-              <h3>Salesforce AI Associate</h3>
-              <p class="cert-date">Marzo 2025</p>
+              <h3 data-es="Salesforce AI Associate" data-en="Salesforce AI Associate" data-de="Salesforce AI Associate">Salesforce AI Associate</h3>
+              <p class="cert-date" data-es="Marzo 2025" data-en="March 2025" data-de="März 2025">Marzo 2025</p>
             </div>
             <div class="cert-card">
               <img src="assets/ass.png" alt="Salesforce Associate" />
-              <h3>Salesforce Associate</h3>
-              <p class="cert-date">Junio 2023</p>
+              <h3 data-es="Salesforce Associate" data-en="Salesforce Associate" data-de="Salesforce Associate">Salesforce Associate</h3>
+              <p class="cert-date" data-es="Junio 2023" data-en="June 2023" data-de="Juni 2023">Junio 2023</p>
             </div>
             <div class="cert-card">
               <img src="assets/first.png" alt="First Certificate" />
-              <h3>First Certificate in English</h3>
-              <p class="cert-date">Diciembre 2018</p>
+              <h3 data-es="First Certificate in English" data-en="First Certificate in English" data-de="First Certificate in English">First Certificate in English</h3>
+              <p class="cert-date" data-es="Diciembre 2018" data-en="December 2018" data-de="Dezember 2018">Diciembre 2018</p>
             </div>
           </div>
         </section>
 
         <section class="section" id="contacto">
-          <h2>✿ Contacto</h2>
+          <h2 data-es="✿ Contacto" data-en="✿ Contact" data-de="✿ Kontakt">✿ Contacto</h2>
           <div class="contact-info">
             <p>
               <img src="assets/email.png" alt="Email" class="icon" />
@@ -240,7 +245,7 @@
             </p>
             <p>
               <img src="assets/location.png" alt="Ubicación" class="icon" />
-              Rosario, Santa Fe
+              <span data-es="Rosario, Santa Fe" data-en="Rosario, Santa Fe" data-de="Rosario, Santa Fe">Rosario, Santa Fe</span>
             </p>
             <p>
               <img src="assets/bd.png" alt="Fecha de nacimiento" class="icon" />
@@ -248,7 +253,7 @@
             </p>
             <p>
               <img src="assets/disp.png" alt="Disponibilidad" class="icon" />
-              Disponibilidad: Full Time
+              <span data-es="Disponibilidad: Full Time" data-en="Availability: Full Time" data-de="Verfügbarkeit: Vollzeit">Disponibilidad: Full Time</span>
             </p>
             <div class="social-links">
               <a
@@ -273,21 +278,21 @@
               action="https://formspree.io/f/mqabpeev"
               method="POST"
             >
-              <h3>✿ Enviame un mensaje</h3>
-              <input type="text" name="name" placeholder="Tu nombre" required />
+              <h3 data-es="✿ Enviame un mensaje" data-en="✿ Send me a message" data-de="✿ Senden Sie mir eine Nachricht">✿ Enviame un mensaje</h3>
+              <input type="text" name="name" data-es="Tu nombre" data-en="Your name" data-de="Ihr Name" placeholder="Tu nombre" required />
               <input
                 type="email"
                 name="email"
-                placeholder="Tu email"
+                data-es="Tu email" data-en="Your email" data-de="Ihre E-Mail" placeholder="Tu email"
                 required
               />
               <textarea
                 name="message"
                 rows="5"
-                placeholder="Escribí tu mensaje aquí..."
+                data-es="Escribí tu mensaje aquí..." data-en="Write your message here..." data-de="Schreiben Sie Ihre Nachricht hier..." placeholder="Escribí tu mensaje aquí..."
                 required
               ></textarea>
-              <button type="submit" class="btn">Enviar</button>
+              <button type="submit" class="btn" data-es="Enviar" data-en="Send" data-de="Senden">Enviar</button>
             </form>
           </div>
         </section>
@@ -362,6 +367,66 @@
         } else {
           sunIcon.style.display = 'block';
           moonIcon.style.display = 'none';
+        }
+      }
+
+      // Funcionalidad del cambio de idioma
+      const languageSelector = document.getElementById('language-selector');
+      
+      // Verificar si hay un idioma guardado en localStorage
+      const savedLanguage = localStorage.getItem('language') || 'es';
+      languageSelector.value = savedLanguage;
+      changeLanguage(savedLanguage);
+
+      languageSelector.addEventListener('change', (e) => {
+        const selectedLanguage = e.target.value;
+        localStorage.setItem('language', selectedLanguage);
+        changeLanguage(selectedLanguage);
+      });
+
+      function changeLanguage(language) {
+        const elements = document.querySelectorAll('[data-es][data-en][data-de]');
+        
+        elements.forEach(element => {
+          const text = element.getAttribute(`data-${language}`);
+          if (text) {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+              element.placeholder = text;
+            } else {
+              element.innerHTML = text;
+            }
+          }
+        });
+
+        // Actualizar mensajes del formulario según el idioma
+        const messages = {
+          es: {
+            success: "¡Mensaje enviado con éxito!",
+            error: "Ocurrió un error. Intentalo nuevamente.",
+            formError: "Ocurrió un error al enviar el formulario."
+          },
+          en: {
+            success: "Message sent successfully!",
+            error: "An error occurred. Please try again.",
+            formError: "An error occurred while sending the form."
+          },
+          de: {
+            success: "Nachricht erfolgreich gesendet!",
+            error: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+            formError: "Beim Senden des Formulars ist ein Fehler aufgetreten."
+          }
+        };
+
+        // Actualizar el mensaje de estado si existe
+        if (status.style.display === 'block') {
+          const currentText = status.textContent;
+          const currentMessages = messages[language];
+          
+          if (currentText.includes('éxito') || currentText.includes('success') || currentText.includes('erfolgreich')) {
+            status.textContent = currentMessages.success;
+          } else if (currentText.includes('error') || currentText.includes('Fehler')) {
+            status.textContent = currentMessages.error;
+          }
         }
       }
     </script>
