@@ -16,6 +16,26 @@
   </head>
   <body>
     <div class="container">
+      <!-- Botón de cambio de tema -->
+      <div class="theme-toggle">
+        <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+          <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+
       <header class="hero">
         <img
           src="assets/olivia.jpeg"
@@ -77,7 +97,7 @@
             <h3>Docente Universitaria – Universidad Austral</h3>
             <span class="periodo">May 2024 – Actualidad</span>
             <p>
-              Imparto clases de la materia “Gestión de Proyectos” de la
+              Imparto clases de la materia "Gestión de Proyectos" de la
               Tecnicatura Universitaria en Programación y soy facilitadora de
               Salesforce.
             </p>
@@ -86,7 +106,7 @@
             <h3>Docente Universitaria – UTN</h3>
             <span class="periodo">Ago 2024 – Dic 2024</span>
             <p>
-              Impartí clases de la materia “Metodologías de sistemas”, abarcando
+              Impartí clases de la materia "Metodologías de sistemas", abarcando
               metodologías ágiles, Scrum, experiencia de usuario y gestión de
               requerimientos. Además, supervisé la práctica profesional
               supervisada (PPS), guiando a los estudiantes en la elaboración de
@@ -139,6 +159,44 @@
             <li>Diseño de Bases de Datos</li>
             <li>SQL</li>
           </ul>
+        </section>
+
+        <section class="section" id="proyectos">
+          <h2>✿ Proyectos</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-content">
+                <h3 class="project-title">Web Scrapping de Supermercados de Rosario</h3>
+                <p class="project-description">
+                  Una app de consola que pide al usuario el nombre del producto a buscar y devuelve un archivo con los productos con el precio en distintos supermercados con el objetivo de que el usuario pueda comparar y buscar el precio más barato.                </p>
+                <p class="project-description">
+                  Tecnologías Utilizadas: Python, Selenium.                </p>
+
+                <div class="project-links">
+                  <a href="https://github.com/olivialuciano/automatizacion_web_py" target="_blank" class="code">Repo</a>
+                </div>
+              </div>
+              <div class="project-card">
+                <img src="assets/guia-vegana.png" alt="Salesforce Toolkit" class="project-image">
+                <div class="project-content">
+                  <h3 class="project-title">La Guía Vegana de Rosario</h3>
+                  <p class="project-description">
+                    Una guía para personas veganas y no veganas que quieren conocer más sobre el veganismo en Rosario. Aqui se encuentran bares, restaurantes, heladerías, panaderías, mercados, dietéticas, profesionales de la salud, recursos informativos y activismos que hay en la ciudad.
+                  </p>
+                  <p class="project-description">
+                    Tecnologías utilizadas: React JS, .NET Core, SQL Server. Para hosting se utilizó Render y Somee.
+                  </p>
+  
+                  <div class="project-links">
+                    <a href="https://guia-vegana-rosario.onrender.com/" target="_blank" class="demo">Ver</a>
+                    <a href="https://github.com/olivialuciano/Guia-Vegana-Frontend" target="_blank" class="code">Repo</a>
+                    <a href="https://github.com/olivialuciano/Guia-Vegana-API" target="_blank" class="code">Repo API</a>
+                  </div>
+                </div>
+            </div>
+
+            
+          </div>
         </section>
 
         <section class="section" id="certificaciones">
@@ -237,6 +295,7 @@
     </div>
 
     <script>
+      // Funcionalidad del formulario de contacto
       const form = document.querySelector(".contact-form");
       const status = document.createElement("p");
       status.id = "form-status";
@@ -272,6 +331,39 @@
           status.style.color = "red";
         }
       });
+
+      // Funcionalidad del cambio de tema
+      const themeToggle = document.getElementById('theme-toggle');
+      const html = document.documentElement;
+      
+      // Verificar si hay un tema guardado en localStorage
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        html.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+      }
+
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = html.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+      });
+
+      function updateThemeIcon(theme) {
+        const sunIcon = themeToggle.querySelector('.sun-icon');
+        const moonIcon = themeToggle.querySelector('.moon-icon');
+        
+        if (theme === 'dark') {
+          sunIcon.style.display = 'none';
+          moonIcon.style.display = 'block';
+        } else {
+          sunIcon.style.display = 'block';
+          moonIcon.style.display = 'none';
+        }
+      }
     </script>
   </body>
 </html>
