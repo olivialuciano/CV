@@ -94,15 +94,13 @@
               data-de="Kontaktiere mich"
               >Contactame</a
             >
-            <a
-              href="assets/CV.pdf"
-              download
+            <button
+              id="downloadCvBtn"
               class="btn-outline"
               data-es="Descargar CV"
               data-en="Download CV"
               data-de="CV herunterladen"
-              >Descargar CV</a
-            >
+            ></button>
           </div>
         </div>
       </header>
@@ -828,6 +826,32 @@
           }
         });
       }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const downloadBtn = document.getElementById("downloadCvBtn");
+        const languageSelector = document.getElementById("language-selector");
+
+        downloadBtn.addEventListener("click", () => {
+          const lang = languageSelector.value;
+
+          let cvUrl = "./assets/cv-es.pdf";
+          let fileName = "Olivia_Luciano_CV_ES.pdf";
+
+          if (lang === "en") {
+            cvUrl = "./assets/cv-en.pdf";
+            fileName = "Olivia_Luciano_CV_EN.pdf";
+          }
+
+          const link = document.createElement("a");
+          link.href = cvUrl;
+          link.download = fileName;
+
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      });
     </script>
   </body>
 </html>
