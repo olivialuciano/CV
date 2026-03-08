@@ -7,17 +7,14 @@
       content="https://cv-rosy-zeta.vercel.app/assets/olivia.jpeg"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio personal de Olivia Luciano — Salesforce Platform Administrator & Developer, docente universitaria y profesional orientada a la automatización, el diseño de soluciones y la mejora continua."
-    />
     <title>CV - Olivia Luciano</title>
 
     <link rel="stylesheet" href="css/styles.css" />
 
     <link rel="icon" href="./assets/flower3.png" type="image/png" />
+    <link rel="shortcut icon" href="flower3.png" type="image/png" />
+    <meta property="og:image" content="assets/olivia.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#f6efe2" />
   </head>
   <body>
     <div class="theme-toggle">
@@ -131,213 +128,6 @@
               data-en="Hello, I'm Olivia, a University Programming Technician, Salesforce Platform Administrator & Developer, and University Professor. I have solid experience in functional requirements analysis, scalable solution design, and process automation within the Salesforce ecosystem. I have worked in production environments performing advanced configuration, Apex development, Flow creation, validation rules, data model optimization, and bulk data management using Data Loader. I also designed and implemented an Einstein Bot for channels such as WhatsApp and Chat, improving user experience and optimizing automated customer interactions. Additionally, I developed a Bash toolkit to automate key development lifecycle tasks such as deployment package generation, validation processes, and branch management using Salesforce CLI and Git, significantly reducing manual effort and improving operational efficiency. I am known for my analytical mindset, structured approach, clear documentation skills, and strong focus on continuous improvement. My university teaching experience strengthened my technical leadership, communication abilities, and capacity to guide teams through complex projects. I am actively seeking new professional opportunities where I can contribute technical value, take on high-impact challenges, and continue growing within innovative and scalable environments."
               data-de="Hallo, ich bin Olivia, Universitäts-Technikerin für Programmierung, Salesforce Platform Administrator & Developer sowie Universitätsprofessorin. Ich verfüge über fundierte Erfahrung in der Analyse funktionaler Anforderungen, im Design skalierbarer Lösungen und in der Automatisierung von Prozessen innerhalb des Salesforce-Ökosystems. Ich habe in produktiven Umgebungen gearbeitet und dabei erweiterte Konfigurationen, Apex-Entwicklung, Flow-Erstellung, Validierungsregeln, Optimierung von Datenmodellen sowie die Verwaltung großer Datenmengen mit Data Loader durchgeführt. Darüber hinaus habe ich einen Einstein-Bot für Kanäle wie WhatsApp und Chat konzipiert und implementiert, wodurch die Benutzererfahrung verbessert und automatisierte Interaktionen optimiert wurden. Zusätzlich entwickelte ich ein Bash-Toolkit zur Automatisierung zentraler Aufgaben im Entwicklungszyklus, wie die Erstellung von Deployment-Paketen, Validierungsprozesse und Branch-Management mit Salesforce CLI und Git, wodurch manuelle Aufwände reduziert und die Effizienz gesteigert wurden. Ich zeichne mich durch analytisches Denken, eine strukturierte Arbeitsweise, klare Dokumentation und einen starken Fokus auf kontinuierliche Verbesserung aus. Meine Erfahrung als Universitätsdozentin stärkte meine Fähigkeiten im technischen Leadership, in der Kommunikation und in der Begleitung von Teams bei komplexen Projekten. Ich befinde mich aktiv auf der Suche nach neuen beruflichen Möglichkeiten, um technischen Mehrwert zu schaffen, anspruchsvolle Herausforderungen zu übernehmen und mich in innovativen Umgebungen weiterzuentwickeln."
             ></p>
-          </div>
-        </section>
-
-        <section class="section" id="certificaciones">
-          <h2
-            class="reveal"
-            data-es="✿ Certificaciones"
-            data-en="✿ Certifications"
-            data-de="✿ Zertifizierungen"
-          >
-            ✿ Certificaciones
-          </h2>
-          <div class="cert-grid">
-            <div class="cert-card reveal">
-              <img src="assets/ba.png" alt="Salesforce Business Analyst" />
-              <h3
-                data-es="Salesforce Business Analyst"
-                data-en="Salesforce Business Analyst"
-                data-de="Salesforce Business Analyst"
-              >
-                Salesforce Business Analyst
-              </h3>
-              <p
-                class="cert-date"
-                data-es="Enero 2026"
-                data-en="January 2026"
-                data-de="Januar 2026"
-              >
-                Enero 2026
-              </p>
-            </div>
-            <div class="cert-card reveal">
-              <img src="assets/spa.png" alt="Platform Administrator" />
-              <h3
-                data-es="Salesforce Platform Administrator"
-                data-en="Salesforce Platform Administrator"
-                data-de="Salesforce Platform Administrator"
-              >
-                Salesforce Platform Administrator
-              </h3>
-              <p
-                class="cert-date"
-                data-es="Noviembre 2025"
-                data-en="November 2025"
-                data-de="November 2025"
-              >
-                Noviembre 2025
-              </p>
-            </div>
-            <div class="cert-card reveal">
-              <img src="assets/afs.png" alt="Agentforce Specialist" />
-              <h3
-                data-es="Salesforce Agentforce Specialist"
-                data-en="Salesforce Agentforce Specialist"
-                data-de="Salesforce Agentforce Specialist"
-              >
-                Salesforce Agentforce Specialist
-              </h3>
-              <p
-                class="cert-date"
-                data-es="Julio 2025"
-                data-en="July 2025"
-                data-de="Juli 2025"
-              >
-                Julio 2025
-              </p>
-            </div>
-            <div class="cert-card reveal">
-              <img src="assets/pab.png" alt="App Builder" />
-              <h3
-                data-es="Salesforce Platform App Builder"
-                data-en="Salesforce Platform App Builder"
-                data-de="Salesforce Platform App Builder"
-              >
-                Salesforce Platform App Builder
-              </h3>
-              <p
-                class="cert-date"
-                data-es="Junio 2025"
-                data-en="June 2025"
-                data-de="Juni 2025"
-              >
-                Junio 2025
-              </p>
-            </div>
-            <div class="cert-card reveal">
-              <img src="assets/ai_ass.png" alt="AI Associate" />
-              <h3
-                data-es="Salesforce AI Associate"
-                data-en="Salesforce AI Associate"
-                data-de="Salesforce AI Associate"
-              >
-                Salesforce AI Associate
-              </h3>
-              <p
-                class="cert-date"
-                data-es="Marzo 2025"
-                data-en="March 2025"
-                data-de="März 2025"
-              >
-                Marzo 2025
-              </p>
-            </div>
-            <div class="cert-card reveal">
-              <img src="assets/ass.png" alt="Salesforce Platform Foundations" />
-              <h3
-                data-es="Salesforce Platform Foundations"
-                data-en="Salesforce Platform Foundations"
-                data-de="Salesforce Platform Foundations"
-              >
-                Salesforce Platform Foundations
-              </h3>
-              <p
-                class="cert-date"
-                data-es="Junio 2023"
-                data-en="June 2023"
-                data-de="Juni 2023"
-              >
-                Junio 2023
-              </p>
-            </div>
-            <div class="cert-card reveal">
-              <img src="assets/first.png" alt="First Certificate" />
-              <h3
-                data-es="First Certificate in English"
-                data-en="First Certificate in English"
-                data-de="First Certificate in English"
-              >
-                First Certificate in English
-              </h3>
-              <p
-                class="cert-date"
-                data-es="Diciembre 2018"
-                data-en="December 2018"
-                data-de="Dezember 2018"
-              >
-                Diciembre 2018
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section reveal" id="trailhead">
-          <h2 data-es="✿ Trailhead" data-en="✿ Trailhead" data-de="✿ Trailhead">
-            ✿ Trailhead
-          </h2>
-
-          <div class="trailhead-wrapper">
-            <div class="trailhead-stats">
-              <div class="trail-stat">
-                <span class="trail-number" data-target="12" data-suffix=""
-                  >0</span
-                >
-                <span
-                  class="trail-label"
-                  data-es="Superbadges"
-                  data-en="Superbadges"
-                  data-de="Superbadges"
-                  >Superbadges</span
-                >
-              </div>
-
-              <div class="trail-stat">
-                <span class="trail-number" data-target="200" data-suffix="+"
-                  >0</span
-                >
-                <span
-                  class="trail-label"
-                  data-es="Insignias"
-                  data-en="Badges"
-                  data-de="Abzeichen"
-                  >Insignias</span
-                >
-              </div>
-
-              <div class="trail-stat">
-                <span class="trail-number" data-target="120" data-suffix="k+"
-                  >0</span
-                >
-                <span
-                  class="trail-label"
-                  data-es="Puntos Trailhead"
-                  data-en="Trailhead Points"
-                  data-de="Trailhead-Punkte"
-                  >Puntos Trailhead</span
-                >
-              </div>
-            </div>
-
-            <div class="trailhead-card">
-              <p
-                data-es="Trailhead es la plataforma oficial de aprendizaje de Salesforce donde completo módulos, proyectos y superbadges prácticos para profundizar conocimientos técnicos."
-                data-en="Trailhead is Salesforce's official learning platform where I complete modules, projects, and hands-on superbadges to deepen technical knowledge."
-                data-de="Trailhead ist die offizielle Lernplattform von Salesforce, auf der ich Module, Projekte und Superbadges abschließe."
-              ></p>
-
-              <a
-                href="https://trailblazer.me/id/olivialuciano42"
-                target="_blank"
-                class="trailhead-link"
-                data-es="Ver mi perfil de Trailhead →"
-                data-en="View my Trailhead profile →"
-                data-de="Mein Trailhead-Profil ansehen →"
-              >
-                Ver mi perfil de Trailhead →
-              </a>
-            </div>
           </div>
         </section>
 
@@ -545,13 +335,15 @@
                   de Rosario para encontrar la opción más barata.
                 </p>
                 <p
-                  class="project-tech"
+                  class="project-description"
+                  style="margin-bottom: 0; font-weight: 500; font-size: 0.8rem"
                   data-es="Tech: Python, Selenium."
                   data-en="Tech: Python, Selenium."
                   data-de="Tech: Python, Selenium."
                 >
                   Tech: Python, Selenium.
                 </p>
+                <br />
                 <div class="project-links">
                   <a
                     href="https://github.com/olivialuciano/automatizacion_web_py"
@@ -591,13 +383,15 @@
                   recursos profesionales para la comunidad vegana local.
                 </p>
                 <p
-                  class="project-tech"
+                  class="project-description"
+                  style="margin-bottom: 0; font-weight: 500; font-size: 0.8rem"
                   data-es="Tech: React JS, .NET Core, SQL."
                   data-en="Tech: React JS, .NET Core, SQL."
                   data-de="Tech: React JS, .NET Core, SQL."
                 >
                   Tech: React JS, .NET Core, SQL.
                 </p>
+                <br />
                 <div class="project-links">
                   <a
                     href="https://guia-vegana-rosario.onrender.com/"
@@ -632,6 +426,145 @@
           </div>
         </section>
 
+        <section class="section" id="certificaciones">
+          <h2
+            class="reveal"
+            data-es="✿ Certificaciones"
+            data-en="✿ Certifications"
+            data-de="✿ Zertifizierungen"
+          >
+            ✿ Certificaciones
+          </h2>
+          <div class="cert-grid">
+            <div class="cert-card reveal">
+              <img src="assets/ba.png" alt="Salesforce Business Analyst" />
+              <h3
+                data-es="Salesforce Business Analyst"
+                data-en="Salesforce Business Analyst"
+                data-de="Salesforce Business Analyst"
+              >
+                Salesforce Business Analyst
+              </h3>
+              <p
+                class="cert-date"
+                data-es="Enero 2026"
+                data-en="January 2026"
+                data-de="Januar 2026"
+              >
+                Enero 2026
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <img src="assets/spa.png" alt="Platform Administrator" />
+              <h3
+                data-es="Salesforce Platform Administrator"
+                data-en="Salesforce Platform Administrator"
+                data-de="Salesforce Platform Administrator"
+              >
+                Salesforce Platform Administrator
+              </h3>
+              <p
+                class="cert-date"
+                data-es="Noviembre 2025"
+                data-en="November 2025"
+                data-de="November 2025"
+              >
+                Noviembre 2025
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <img src="assets/afs.png" alt="Agentforce Specialist" />
+              <h3
+                data-es="Salesforce Agentforce Specialist"
+                data-en="Salesforce Agentforce Specialist"
+                data-de="Salesforce Agentforce Specialist"
+              >
+                Salesforce Agentforce Specialist
+              </h3>
+              <p
+                class="cert-date"
+                data-es="Julio 2025"
+                data-en="July 2025"
+                data-de="Juli 2025"
+              >
+                Julio 2025
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <img src="assets/pab.png" alt="App Builder" />
+              <h3
+                data-es="Salesforce Platform App Builder"
+                data-en="Salesforce Platform App Builder"
+                data-de="Salesforce Platform App Builder"
+              >
+                Salesforce Platform App Builder
+              </h3>
+              <p
+                class="cert-date"
+                data-es="Junio 2025"
+                data-en="June 2025"
+                data-de="Juni 2025"
+              >
+                Junio 2025
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <img src="assets/ai_ass.png" alt="AI Associate" />
+              <h3
+                data-es="Salesforce AI Associate"
+                data-en="Salesforce AI Associate"
+                data-de="Salesforce AI Associate"
+              >
+                Salesforce AI Associate
+              </h3>
+              <p
+                class="cert-date"
+                data-es="Marzo 2025"
+                data-en="March 2025"
+                data-de="März 2025"
+              >
+                Marzo 2025
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <img src="assets/ass.png" alt="Salesforce Platform Foundations" />
+              <h3
+                data-es="Salesforce Platform Foundations"
+                data-en="Salesforce Platform Foundations"
+                data-de="Salesforce Platform Foundations"
+              >
+                Salesforce Platform Foundations
+              </h3>
+              <p
+                class="cert-date"
+                data-es="Junio 2023"
+                data-en="June 2023"
+                data-de="Juni 2023"
+              >
+                Junio 2023
+              </p>
+            </div>
+            <div class="cert-card reveal">
+              <img src="assets/first.png" alt="First Certificate" />
+              <h3
+                data-es="First Certificate in English"
+                data-en="First Certificate in English"
+                data-de="First Certificate in English"
+              >
+                First Certificate in English
+              </h3>
+              <p
+                class="cert-date"
+                data-es="Diciembre 2018"
+                data-en="December 2018"
+                data-de="Dezember 2018"
+              >
+                Diciembre 2018
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section class="section reveal" id="contacto">
           <h2 data-es="✿ Contacto" data-en="✿ Contact" data-de="✿ Kontakt">
             ✿ Contacto
@@ -639,60 +572,30 @@
 
           <div class="contact-info reveal">
             <p>
-              <img
-                src="assets/email.png"
-                data-light="assets/mail.png"
-                data-dark="assets/mail-dark.png"
-                alt="Email"
-                class="icon theme-icon"
-              />
+              <img src="assets/email.png" alt="Email" class="icon" />
               <a href="mailto:olivialuciano42@gmail.com"
                 >olivialuciano42@gmail.com</a
               >
             </p>
             <p>
-              <img
-                src="assets/phone.png"
-                data-light="assets/phone.png"
-                data-dark="assets/phone-dark.png"
-                alt="Teléfono"
-                class="icon theme-icon"
-              />
+              <img src="assets/phone.png" alt="Teléfono" class="icon" />
               <a href="tel:+5493413478225">+54 9 341 347 8225</a>
             </p>
             <p>
-              <img
-                src="assets/location.png"
-                data-light="assets/location.png"
-                data-dark="assets/location-dark.png"
-                alt="Ubicación"
-                class="icon theme-icon"
-              />
+              <img src="assets/location.png" alt="Ubicación" class="icon" />
               <span
-                data-es="Rosario, Santa Fe, Argentina."
-                data-en="Rosario, Santa Fe, Argentina."
-                data-de="Rosario, Santa Fe, Argentina."
-                >Rosario, Santa Fe, Argentina.</span
+                data-es="Rosario, Santa Fe"
+                data-en="Rosario, Santa Fe"
+                data-de="Rosario, Santa Fe"
+                >Rosario, Santa Fe</span
               >
             </p>
             <p>
-              <img
-                src="assets/bd.png"
-                data-light="assets/bd.png"
-                data-dark="assets/bd-dark.png"
-                alt="Fecha de nacimiento"
-                class="icon theme-icon"
-              />
-              <span>31/05/2003</span>
+              <img src="assets/bd.png" alt="Fecha de nacimiento" class="icon" />
+              31/05/2003
             </p>
             <p>
-              <img
-                src="assets/disp.png"
-                data-light="assets/disp.png"
-                data-dark="assets/disp-dark.png"
-                alt="Disponibilidad"
-                class="icon theme-icon"
-              />
+              <img src="assets/disp.png" alt="Disponibilidad" class="icon" />
               <span
                 data-es="Disponibilidad: Full Time"
                 data-en="Availability: Full Time"
@@ -700,50 +603,32 @@
                 >Disponibilidad: Full Time</span
               >
             </p>
-
             <div class="social-links">
               <a
                 href="https://www.linkedin.com/in/olivialuciano"
                 target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <img
+                ><img
                   src="assets/linkedin.png"
-                  data-light="assets/linkedin.png"
-                  data-dark="assets/linkedin.png"
                   alt="LinkedIn"
-                  class="icon theme-icon social-icon"
-                />
-              </a>
-              <a
-                href="https://github.com/olivialuciano"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <img
+                  class="icon"
+                  style="width: 35px; height: 35px"
+              /></a>
+              <a href="https://github.com/olivialuciano" target="_blank"
+                ><img
                   src="assets/github.png"
-                  data-light="assets/github.png"
-                  data-dark="assets/github-dark.png"
                   alt="GitHub"
-                  class="icon theme-icon social-icon"
-                />
-              </a>
+                  class="icon"
+                  style="width: 35px; height: 35px"
+              /></a>
               <a
                 href="https://trailblazer.me/id/olivialuciano42"
                 target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Trailblazer"
-              >
-                <img
+                ><img
                   src="assets/trailhead.png"
-                  data-light="assets/trailhead.png"
-                  data-dark="assets/trailhead.png"
                   alt="Trailblazer"
-                  class="icon theme-icon social-icon"
-                />
-              </a>
+                  class="icon"
+                  style="width: 35px; height: 35px"
+              /></a>
             </div>
           </div>
 
@@ -757,41 +642,45 @@
                 data-es="✿ Enviame un mensaje"
                 data-en="✿ Send me a message"
                 data-de="✿ Senden Sie mir eine Nachricht"
+                style="
+                  text-align: center;
+                  margin-bottom: 1.5rem;
+                  color: var(--text-main);
+                "
               >
                 ✿ Enviame un mensaje
               </h3>
-
               <input
                 type="text"
                 name="name"
+                data-es="Tu nombre"
+                data-en="Your name"
+                data-de="Ihr Name"
+                placeholder="Tu nombre"
                 required
-                data-es="Nombre"
-                data-en="Name"
-                data-de="Name"
-                placeholder="Nombre"
               />
               <input
                 type="email"
                 name="email"
+                data-es="Tu email"
+                data-en="Your email"
+                data-de="Ihre E-Mail"
+                placeholder="Tu email"
                 required
-                data-es="Correo electrónico"
-                data-en="Email"
-                data-de="E-Mail"
-                placeholder="Correo electrónico"
               />
               <textarea
                 name="message"
                 rows="5"
+                data-es="Escribí tu mensaje aquí..."
+                data-en="Write your message here..."
+                data-de="Schreiben Sie Ihre Nachricht hier..."
+                placeholder="Escribí tu mensaje aquí..."
                 required
-                data-es="Tu mensaje"
-                data-en="Your message"
-                data-de="Ihre Nachricht"
-                placeholder="Tu mensaje"
               ></textarea>
-
               <button
                 type="submit"
                 class="btn"
+                style="width: 100%"
                 data-es="Enviar"
                 data-en="Send"
                 data-de="Senden"
@@ -812,28 +701,18 @@
         threshold: 0.1, // Se activa cuando el 10% del elemento es visible
       };
 
-      const revealElements = document.querySelectorAll(".reveal");
-
-      if ("IntersectionObserver" in window) {
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("active");
-            }
-          });
-        }, observerOptions);
-
-        revealElements.forEach((el) => {
-          observer.observe(el);
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            // Opcional: observer.unobserve(entry.target);
+          }
         });
-      } else {
-        revealElements.forEach((el) => el.classList.add("active"));
-      }
+      }, observerOptions);
 
-      window.addEventListener("load", () => {
-        revealElements.forEach((el, index) => {
-          if (index < 4) el.classList.add("active");
-        });
+      // Seleccionar todos los elementos con la clase 'reveal'
+      document.querySelectorAll(".reveal").forEach((el) => {
+        observer.observe(el);
       });
 
       /* --- 2. FORMULARIO CONTACTO --- */
@@ -885,7 +764,6 @@
       const savedTheme = localStorage.getItem("theme") || "light";
       html.setAttribute("data-theme", savedTheme);
       updateThemeIcon(savedTheme);
-      updateContactIcons(savedTheme);
 
       const savedLanguage = localStorage.getItem("language") || "es";
       languageSelector.value = savedLanguage;
@@ -898,7 +776,6 @@
         html.setAttribute("data-theme", newTheme);
         localStorage.setItem("theme", newTheme);
         updateThemeIcon(newTheme);
-        updateContactIcons(newTheme);
       });
 
       languageSelector.addEventListener("change", (e) => {
@@ -917,15 +794,6 @@
           sunIcon.style.display = "block";
           moonIcon.style.display = "none";
         }
-      }
-
-      function updateContactIcons(theme) {
-        document.querySelectorAll(".theme-icon").forEach((icon) => {
-          const lightSrc = icon.getAttribute("data-light");
-          const darkSrc = icon.getAttribute("data-dark");
-          if (!lightSrc || !darkSrc) return;
-          icon.src = theme === "dark" ? darkSrc : lightSrc;
-        });
       }
 
       function changeLanguage(language) {
@@ -969,57 +837,6 @@
           link.click();
           document.body.removeChild(link);
         });
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const statsSection = document.querySelector("#trailhead");
-        const counters = document.querySelectorAll(".trail-number");
-
-        if (!statsSection || !counters.length) return;
-
-        let hasAnimated = false;
-
-        function animateCounter(counter) {
-          const target = Number(counter.dataset.target || 0);
-          const suffix = counter.dataset.suffix || "";
-          const duration = 1600;
-          const startTime = performance.now();
-
-          function update(currentTime) {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-
-            // easing suave
-            const eased = 1 - Math.pow(1 - progress, 3);
-
-            const currentValue = Math.floor(eased * target);
-
-            counter.textContent = `${currentValue}${suffix}`;
-
-            if (progress < 1) {
-              requestAnimationFrame(update);
-            } else {
-              counter.textContent = `${target}${suffix}`;
-            }
-          }
-
-          requestAnimationFrame(update);
-        }
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting && !hasAnimated) {
-                hasAnimated = true;
-                counters.forEach((counter) => animateCounter(counter));
-              }
-            });
-          },
-          { threshold: 0.35 },
-        );
-
-        observer.observe(statsSection);
       });
     </script>
   </body>
