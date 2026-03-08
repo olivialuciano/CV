@@ -1079,41 +1079,80 @@ main {
 
 @media (max-width: 420px) {
   .container {
-    width: calc(100% - 0.85rem);
+    width: calc(100% - 0.7rem);
   }
 
   .theme-toggle {
     left: 50%;
     right: auto;
-    transform: translateX(-50%) scale(0.92);
+    transform: translateX(-50%) scale(0.88);
     transform-origin: top center;
   }
 
   .hero {
-    padding-top: 6.3rem;
+    padding-top: 6rem;
   }
 
   .hero-text h1 {
-    font-size: clamp(2.15rem, 12vw, 3.2rem);
+    font-size: clamp(1.95rem, 11vw, 2.7rem);
   }
 
   .hero-text > p {
-    font-size: 0.92rem;
+    font-size: 0.86rem;
+    line-height: 1.5;
   }
 
   .btn,
   .btn-outline,
   .project-links a {
-    min-height: 42px;
-    font-size: 0.84rem;
+    min-height: 40px;
+    font-size: 0.8rem;
   }
 
-  .project-links a {
-    flex-basis: 100%;
+  .hero .hero-buttons a,
+  .hero .hero-buttons button {
+    flex: 1 1 100%;
+  }
+
+  .tags {
+    gap: 0.38rem;
+  }
+
+  .tags li {
+    padding: 0.42rem 0.62rem;
+    font-size: 0.74rem;
+  }
+
+  .cert-grid {
+    gap: 0.65rem;
+  }
+
+  .cert-card {
+    padding: 0.9rem 0.75rem;
+  }
+
+  .cert-card h3 {
+    font-size: 0.88rem;
+  }
+
+  .trailhead-stats {
+    gap: 0.38rem;
+  }
+
+  .trail-stat {
+    padding: 0.68rem 0.28rem;
+  }
+
+  .trail-number {
+    font-size: 1.08rem;
+  }
+
+  .trail-label {
+    font-size: 0.58rem;
   }
 
   .contact-info p {
-    font-size: 0.91rem;
+    font-size: 0.88rem;
   }
 }
 
@@ -1255,12 +1294,300 @@ main {
 }
 
 @media (max-width: 720px) {
-  .trailhead-stats {
-    grid-template-columns: 1fr;
+  .container {
+    width: min(100% - 0.9rem, 1000px);
+    padding-top: 0.6rem;
+    padding-bottom: 2rem;
   }
 
+  .theme-toggle {
+    top: 0.55rem;
+    right: 0.55rem;
+    gap: 0.3rem;
+    padding: 0.3rem 0.42rem;
+    transform: scale(0.92);
+    transform-origin: top right;
+  }
+
+  .language-selector {
+    max-width: 52px;
+  }
+
+  .hero {
+    padding-top: 5.5rem;
+    gap: 1.15rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .hero::before {
+    width: 100%;
+    font-size: clamp(2.2rem, 17vw, 4rem);
+    text-align: center;
+  }
+
+  .hero::after {
+    right: 0.8rem;
+    top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .profile-wrapper {
+    width: min(66vw, 220px);
+  }
+
+  .profile-wrapper::before {
+    inset: 14px;
+  }
+
+  .profile-wrapper::after {
+    inset: -8px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2.15rem, 11vw, 3.3rem);
+    line-height: 0.95;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-text > p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text h1::after {
+    margin-inline: auto;
+    width: 92px;
+    height: 10px;
+    margin-top: 0.8rem;
+  }
+
+  .hero .hero-buttons {
+    justify-content: center;
+    width: 100%;
+    gap: 0.55rem;
+    margin-top: 1rem;
+  }
+
+  .hero .hero-buttons a,
+  .hero .hero-buttons button {
+    flex: 1 1 calc(50% - 0.3rem);
+    min-width: 0;
+    padding: 0.68rem 0.85rem;
+  }
+
+  .section {
+    padding: 1rem 0;
+    margin-bottom: 0.65rem;
+  }
+
+  .section::before {
+    margin-bottom: 1rem;
+  }
+
+  .section h2,
+  .contact-form h3 {
+    font-size: 1.65rem;
+    line-height: 1.05;
+    margin-bottom: 0.9rem;
+  }
+
+  .item,
+  #perfil .glass-card,
+  .contact-info,
+  .form-wrapper,
+  .project-card,
+  .cert-card,
   .trail-stat,
   .trailhead-card {
-    border-radius: 24px;
+    border-radius: 20px !important;
+  }
+
+  .item,
+  .contact-info,
+  .form-wrapper,
+  .trailhead-card {
+    padding: 1rem;
+  }
+
+  .cert-card {
+    padding: 1rem 0.85rem;
+  }
+
+  .item h3,
+  .cert-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .item p,
+  #perfil .glass-card p,
+  .project-description,
+  .contact-info p,
+  .contact-form input,
+  .contact-form textarea,
+  .trailhead-card p {
+    font-size: 0.9rem;
+  }
+
+  .periodo {
+    width: 100%;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    padding: 0.42rem 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* HABILIDADES: más compactas y varias por fila */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+
+  .tags li {
+    width: auto;
+    flex: 0 1 auto;
+    text-align: center;
+    padding: 0.48rem 0.72rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    box-shadow: 2px 2px 0 rgba(35, 31, 32, 0.07);
+  }
+
+  #habilidades .tags::after {
+    display: none;
+  }
+
+  /* CERTIFICACIONES: 2 por renglón */
+  .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .cert-card img {
+    width: 46px;
+    margin-bottom: 0.7rem;
+  }
+
+  .cert-date {
+    font-size: 0.75rem;
+  }
+
+  /* PROYECTOS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .project-card,
+  .cert-card {
+    max-width: 100%;
+    width: 100%;
+    transform: none !important;
+  }
+
+  .project-card {
+    max-height: none;
+  }
+
+  .project-image {
+    aspect-ratio: 16 / 9.2;
+  }
+
+  .project-content {
+    padding: 0.9rem;
+    gap: 0.5rem;
+  }
+
+  .project-title {
+    font-size: 1.08rem;
+  }
+
+  .project-description {
+    line-height: 1.5;
+  }
+
+  .project-tech {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .project-links {
+    width: 100%;
+    gap: 0.45rem;
+  }
+
+  .project-links a {
+    flex: 1 1 calc(50% - 0.25rem);
+    min-width: 0;
+    padding: 0.62rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  /* TRAILHEAD: los 3 en la misma línea */
+  .trailhead-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .trailhead-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .trail-stat {
+    padding: 0.75rem 0.35rem;
+    min-width: 0;
+  }
+
+  .trail-number {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+    margin-bottom: 0.2rem;
+  }
+
+  .trail-label {
+    font-size: 0.64rem;
+    line-height: 1.15;
+  }
+
+  .trailhead-link {
+    font-size: 0.88rem;
+  }
+
+  /* CONTACTO */
+  .contact-info,
+  .form-wrapper {
+    padding: 1rem;
+  }
+
+  .contact-info p {
+    grid-template-columns: 18px minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+    gap: 0.6rem;
+  }
+
+  .social-links a {
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-icon {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.82rem 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  textarea {
+    min-height: 120px;
   }
 }
