@@ -53,10 +53,28 @@
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </button>
+      <div class="custom-language" id="custom-language">
+        <button
+          type="button"
+          class="language-trigger"
+          id="language-trigger"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+        >
+          ES
+        </button>
+
+        <ul class="language-menu" id="language-menu" role="listbox">
+          <li role="option" data-value="es" class="active">ES</li>
+          <li role="option" data-value="en">EN</li>
+          <li role="option" data-value="de">DE</li>
+        </ul>
+      </div>
+
       <select
         id="language-selector"
-        class="language-selector"
-        aria-label="Seleccionar idioma"
+        class="language-selector-hidden"
+        aria-hidden="true"
       >
         <option value="es">ES</option>
         <option value="en">EN</option>
@@ -698,10 +716,10 @@
                 class="icon theme-icon"
               />
               <span
-                data-es="Disponibilidad: Full Time"
-                data-en="Availability: Full Time"
-                data-de="Verfügbarkeit: Vollzeit"
-                >Disponibilidad: Full Time</span
+                data-es="Disponibilidad freelance (por horas o proyecto)"
+                data-en="Available for freelance and contract opportunities"
+                data-de="Verfügbar für Freelance-Projekte"
+                >Disponibilidad freelance (por horas o proyecto)</span
               >
             </p>
 
@@ -950,6 +968,48 @@
       }
     </script>
     <script>
+      const customLanguage = document.getElementById("custom-language");
+      const languageTrigger = document.getElementById("language-trigger");
+      const languageMenu = document.getElementById("language-menu");
+      const hiddenLanguageSelector =
+        document.getElementById("language-selector");
+
+      languageTrigger.addEventListener("click", () => {
+        customLanguage.classList.toggle("open");
+        languageTrigger.setAttribute(
+          "aria-expanded",
+          customLanguage.classList.contains("open"),
+        );
+      });
+
+      languageMenu.querySelectorAll("li").forEach((option) => {
+        option.addEventListener("click", () => {
+          const selectedLanguage = option.dataset.value;
+
+          hiddenLanguageSelector.value = selectedLanguage;
+          localStorage.setItem("language", selectedLanguage);
+          changeLanguage(selectedLanguage);
+
+          languageTrigger.textContent = option.textContent;
+
+          languageMenu
+            .querySelectorAll("li")
+            .forEach((li) => li.classList.remove("active"));
+          option.classList.add("active");
+
+          customLanguage.classList.remove("open");
+          languageTrigger.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!customLanguage.contains(event.target)) {
+          customLanguage.classList.remove("open");
+          languageTrigger.setAttribute("aria-expanded", "false");
+        }
+      });
+    </script>
+    <script>
       document.addEventListener("DOMContentLoaded", () => {
         const downloadBtn = document.getElementById("downloadCvBtn");
         const languageSelector = document.getElementById("language-selector");
@@ -957,11 +1017,11 @@
         downloadBtn.addEventListener("click", () => {
           const lang = languageSelector.value;
 
-          let cvUrl = "./assets/cv-es.pdf";
+          let cvUrl = "./assets/oivialuciano-cv-es.pdf";
           let fileName = "Olivia_Luciano_CV_ES.pdf";
 
-          if (lang === "en") {
-            cvUrl = "./assets/cv-en.pdf";
+          if (lang === "en" || lang === "de") {
+            cvUrl = "./assets/olivialuciano-cv-en.pdf";
             fileName = "Olivia_Luciano_CV_EN.pdf";
           }
 
