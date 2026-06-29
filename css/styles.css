@@ -595,9 +595,9 @@ main {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 360px));
-  justify-content: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.15rem;
+  align-items: stretch;
 }
 
 .project-card {
@@ -1471,9 +1471,15 @@ main {
   }
 
   /* PROYECTOS */
-  .projects-grid {
-    grid-template-columns: 1fr;
-    justify-items: center;
+  @media (max-width: 720px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .project-card {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   .project-card,
